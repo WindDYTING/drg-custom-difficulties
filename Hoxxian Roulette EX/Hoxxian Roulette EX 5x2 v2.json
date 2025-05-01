@@ -14,8 +14,8 @@
     180,
     200
   ],
-  "ResupplyCost": 40,
-  "StartingNitra": 0,
+  "ResupplyCost": 30,
+  "StartingNitra": 10,
   "ExtraLargeEnemyDamageResistance": [
     0.95,
     1.2,
@@ -218,10 +218,10 @@
       "Base": "ED_Spider_ShieldTank",
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
-      "DifficultyRating": 100,
+      "DifficultyRating": 200,
       "MinSpawnCount": 1,
       "MaxSpawnCount": 9999,
-      "Rarity": 5.25,
+      "Rarity": 9.25,
       "SpawnAmountModifier": 1
     },
     "ED_Spider_Spitter": {
@@ -346,14 +346,14 @@
     },
     "ED_Spider_Tanktuzhu": {
       "Base": "ED_Spider_Tanktuzhu",
-      "Rarity": 6.125,
+      "Rarity": 9.125,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999,
       "SpawnAmountModifier": 1,
       "PawnStats": {
-        "PST_DamageResistance": 1.2333,
-        "PST_DamageBonus": 0.5
+        "PST_DamageResistance": 5,
+        "PST_DamageBonus": 0.2
       }
     },
     "ED_Spider_Shooter": {
@@ -478,11 +478,11 @@
       "Base": "ED_Spider_ExploderTank",
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
-      "DifficultyRating": 40,
+      "DifficultyRating": 60,
       "Elite": true,
       "MaxSpawnCount": 1,
       "MinSpawnCount": 1,
-      "TimeDilation": 1.03,
+      "TimeDilation": 1.01,
       "Scale": 1.2,
       "Rarity": 6
     },
