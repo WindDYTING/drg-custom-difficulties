@@ -1,20 +1,20 @@
 {
   "Name": "Hoxxian Roulette EX 5x2 v2",
   "Description": "基於 Hoxxian Roulette v12. Hoxxian Roulette 系列的增強版，加了移動式紹塔 (傷害減半) and 吐盾蜘蛛, 所有怪物抗性加強. 基於 EX v1 出小冰爆 機率變少, 哨團/墨靈石巨爆 機率變少. 加了 毒霧小蜘蛛跟撕裂者",
-  "MaxActiveCritters": 50,
+  "MaxActiveCritters": 40,
   "MaxActiveSwarmers": [
-    100,
+    120,
     140,
     180,
     200
   ],
   "MaxActiveEnemies": [
-    100,
+    120,
     140,
     180,
     200
   ],
-  "ResupplyCost": 30,
+  "ResupplyCost": 40,
   "StartingNitra": 10,
   "ExtraLargeEnemyDamageResistance": [
     0.95,
@@ -221,7 +221,7 @@
       "DifficultyRating": 200,
       "MinSpawnCount": 1,
       "MaxSpawnCount": 9999,
-      "Rarity": 9.25,
+      "Rarity": 6.25,
       "SpawnAmountModifier": 1
     },
     "ED_Spider_Spitter": {
@@ -255,35 +255,35 @@
     },
     "ED_Spider_ExploderTank_heneng": {
       "Base": "ED_Spider_ExploderTank_heneng",
-      "Rarity": 5.5,
+      "Rarity": 5.345,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999
     },
     "ED_Spider_Exploder_bing": {
       "Base": "ED_Spider_Exploder_bing",
-      "Rarity": 8.5,
+      "Rarity": 5.355,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999
     },
     "ED_Spider_ExploderTank_xiaoshi": {
       "Base": "ED_Spider_ExploderTank_xiaoshi",
-      "Rarity": 10.5,
+      "Rarity": 8.5,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999
     },
     "ED_Spider_ExploderTank_molingshi": {
       "Base": "ED_Spider_ExploderTank_molingshi",
-      "Rarity": 11.5,
+      "Rarity": 8.5,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999
     },
     "ED_Spider_Exploder": {
       "Base": "ED_Spider_Exploder",
-      "Rarity": 5,
+      "Rarity": 5.375,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "SpawnAmountModifier": 1
@@ -312,7 +312,7 @@
     },
     "ED_Crawler": {
       "Base": "ED_Crawler",
-      "Rarity": 4.375,
+      "Rarity": 5.375,
       "SpawnAmountModifier": 1,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
@@ -346,14 +346,14 @@
     },
     "ED_Spider_Tanktuzhu": {
       "Base": "ED_Spider_Tanktuzhu",
-      "Rarity": 9.125,
+      "Rarity": 5.225,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999,
       "SpawnAmountModifier": 1,
       "PawnStats": {
-        "PST_DamageResistance": 5,
-        "PST_DamageBonus": 0.2
+        "PST_DamageResistance": 3.5,
+        "PST_DamageBonus": 0.4
       }
     },
     "ED_Spider_Shooter": {
@@ -436,7 +436,7 @@
     },
     "ED_Spider_Stinger": {
       "Base": "ED_Spider_Stinger",
-      "Rarity": 6.375,
+      "Rarity": 5.125,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999,
@@ -452,7 +452,7 @@
     },
     "ED_Spider_Shooter_dun": {
       "Base": "ED_Spider_Shooter_dun",
-      "Rarity": 5.25,
+      "Rarity": 5.115,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999,
@@ -460,7 +460,7 @@
     },
     "ED_Spider_Swarmerduwu": {
       "Base": "ED_Spider_Swarmerduwu",
-      "Rarity": 4.65,
+      "Rarity": 5.115,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999,
@@ -493,7 +493,7 @@
     },
     "ED_Shredder": {
       "Base": "ED_Shredder",
-      "Rarity": 8.125,
+      "Rarity": 5.125,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999
