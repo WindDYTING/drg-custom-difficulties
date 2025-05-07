@@ -255,7 +255,7 @@
     },
     "ED_Spider_ExploderTank_heneng": {
       "Base": "ED_Spider_ExploderTank_heneng",
-      "Rarity": 5.345,
+      "Rarity": 5.445,
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
       "MaxSpawnCount": 9999
@@ -543,12 +543,7 @@
   "DisruptiveEnemies": {
     "clear": false,
     "add": [
-      "ED_Spider_ExploderTank_heneng",
-      "ED_Spider_ExploderTank_xiaoshi",
-      "ED_Spider_ExploderTank_molingshi",
-      "ED_Spider_Exploder_bing",
-      "ED_Spider_ExploderTank_Elite",
-      "MODDED_ED_Spider_ExploderTank"
+      "ED_Spider_Exploder_bing"
     ],
     "remove": []
   },
