@@ -352,8 +352,8 @@
       "MaxSpawnCount": 9999,
       "SpawnAmountModifier": 1,
       "PawnStats": {
-        "PST_DamageResistance": 3.5,
-        "PST_DamageBonus": 0.4
+        "PST_DamageResistance": 4.5,
+        "PST_DamageBonus": 0.2
       }
     },
     "ED_Spider_Shooter": {
