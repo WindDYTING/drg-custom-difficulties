@@ -1,20 +1,20 @@
 {
   "Name": "Hoxxian Roulette EX 5x2 v3",
-  "Description": "Hoxxian Roulette 系列的增強版，基於 Hoxxian Roulette EX v2. 將遇到的蟲潮難度點數提升，所有 SpawnAmountModifier x2",
+  "Description": "基於 Hoxxian Roulette v12. Hoxxian Roulette 系列的增強版，加了移動式紹塔 (傷害減半) and 吐盾蜘蛛, 所有怪物抗性加強. 基於 EX v1 出小冰爆 機率變少, 哨團/墨靈石巨爆 機率變少. 加了 毒霧小蜘蛛跟撕裂者",
   "MaxActiveCritters": 40,
   "MaxActiveSwarmers": [
     120,
     140,
     180,
-    200
+    220
   ],
   "MaxActiveEnemies": [
     120,
     140,
     180,
-    200
+    220
   ],
-  "ResupplyCost": 40,
+  "ResupplyCost": 35,
   "StartingNitra": 10,
   "ExtraLargeEnemyDamageResistance": [
     0.95,
@@ -59,17 +59,17 @@
     3.8
   ],
   "EnemyCountModifier": [
-    1.7,
     2,
-    2.75,
-    3.15
+    2.5,
+    2.95,
+    3.3
   ],
   "EncounterDifficulty": [
     {
       "weight": 1,
       "range": {
-        "min": 600,
-        "max": 700
+        "min": 700,
+        "max": 800
       }
     }
   ],
@@ -77,15 +77,15 @@
     {
       "weight": 0.3,
       "range": {
-        "min": 200,
-        "max": 200
+        "min": 300,
+        "max": 300
       }
     },
     {
       "weight": 0.7,
       "range": {
-        "min": 250,
-        "max": 350
+        "min": 350,
+        "max": 450
       }
     }
   ],
@@ -132,7 +132,7 @@
     {
       "weight": 1,
       "range": {
-        "min": 650,
+        "min": 750,
         "max": 850
       }
     }
@@ -218,11 +218,11 @@
       "Base": "ED_Spider_ShieldTank",
       "CanBeUsedForConstantPressure": true,
       "CanBeUsedInEncounters": true,
-      "DifficultyRating": 200,
+      "DifficultyRating": 300,
       "MinSpawnCount": 1,
       "MaxSpawnCount": 9999,
-      "Rarity": 6.25,
-      "SpawnAmountModifier": 2
+      "Rarity": 7.25,
+      "SpawnAmountModifier": 1
     },
     "ED_Spider_Spitter": {
       "Base": "ED_Spider_Spitter",
@@ -360,6 +360,14 @@
       "Base": "ED_Spider_Shooter",
       "Rarity": 5.125,
       "CanBeUsedForConstantPressure": true,
+      "SpawnAmountModifier": 2
+    },
+    "ED_Spider_Shooter_Ground": {
+      "Base": "ED_Spider_Shooter_Ground",
+      "Rarity": 5.125,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "MaxSpawnCount": 9999,
       "SpawnAmountModifier": 2
     },
     "ED_Spider_RapidShooter": {
@@ -525,7 +533,7 @@
       "ED_Spider_ExploderTank_Elite",
       "MODDED_ED_Spider_ExploderTank",
       "ED_Spider_Tanktuzhu",
-      "ED_Spider_Shooter_dun"
+      "ED_Spider_Shooter_Ground"
     ],
     "remove": []
   },
@@ -543,7 +551,8 @@
   "DisruptiveEnemies": {
     "clear": false,
     "add": [
-      "ED_Spider_Exploder_bing"
+      "ED_Spider_Exploder_bing",
+      "ED_Spider_Shooter_Ground"
     ],
     "remove": []
   },
