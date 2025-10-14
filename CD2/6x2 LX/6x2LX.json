@@ -243,7 +243,7 @@
             "CanBeUsedInEncounters": true
         },
         "ED_Spider_Spawn": {
-            "Base": "ED_Spider_Grunt_white"
+            "Base": "ED_Spider_Grunt_2"
         },
         "ED_CaveLeech": {
             "Base": "ED_CaveLeech",
@@ -257,11 +257,14 @@
             "Base": "ED_SpiderSpawner"
         },
         "ED_EggSpider": {
-            "Base": "ED_Spider_Grunt_white"
+            "Base": "ED_Spider_Grunt_2"
         },
         "ED_TunnelSwarmer": {
-            "Base": "ED_Spider_Grunt_white"
+            "Base": "ED_Spider_Grunt_2"
         },
+		"ED_Spider_Grunt_2":{
+			"Base": "ED_Spider_Grunt"
+		},
         "ED_Spider_Grunt": {
             "Base": "ED_Spider_Grunt",
             "Rarity": 1.5,
