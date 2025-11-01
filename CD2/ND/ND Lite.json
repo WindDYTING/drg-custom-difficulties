@@ -14,15 +14,15 @@
         "MaxActiveCritters": 40,
         "MaxActiveSwarmers": [
             90,
-            180,
-            180,
-            180
+            120,
+            120,
+            120
         ],
         "MaxActiveEnemies": [
             90,
-            180,
-            240,
-            240
+            150,
+            150,
+            150
         ]
     },
     "DifficultySetting": {
@@ -245,7 +245,7 @@
             "clear": false,
             "add": [
                 "ED_Sprout_Normal",
-                "ED_ShootingPlant_NukeSingle"
+                "ED_ShootingPlant_Elite"
             ],
             "remove": []
         }
