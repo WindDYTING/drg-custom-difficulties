@@ -1,0 +1,14 @@
+{
+  "Name": "Hazard 5x2",
+  "Caps": {
+    "MaxActiveSwarmers": [ 90, 120, 180 ],
+    "MaxActiveEnemies": [ 90, 120, 180 ]
+  },
+  "Resupply": {
+    "Cost": 60
+  },
+  "DifficultySetting": {
+    "BaseHazard": "Hazard 5",
+    "EnemyCountModifier": [ 1.7, 1.7, 2.5, 3 ]
+  }
+}
