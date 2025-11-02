@@ -1,650 +1,633 @@
 {
-    "Name": "ND Lite",
-    "Description": "The relatively fair successor to Lx2 and Lx2EX that also is an initial experiment with MEV. Latest version: Updated for Season 5; StationaryEnemyDiversity 6->8, DisruptiveEnemyPoolCount 9->10.",
-    "Resupply": {
-        "Cost": {
-            "Mutate": "ByResuppliesCalled",
-            "Values": [
-                40,
-                50
-            ]
-        }
-    },
-    "Caps": {
-        "MaxActiveCritters": 40,
-        "MaxActiveSwarmers": [
-            90,
-            120,
-            120,
-            120
-        ],
-        "MaxActiveEnemies": [
-            90,
-            150,
-            150,
-            150
-        ]
-    },
-    "DifficultySetting": {
-        "ExtraLargeEnemyDamageResistance": [
-            1,
-            1.3,
-            1.7,
-            2.1
-        ],
-        "ExtraLargeEnemyDamageResistanceB": [
-            1,
-            1.3,
-            1.5,
-            1.7
-        ],
-        "ExtraLargeEnemyDamageResistanceC": [
-            1,
-            1.3,
-            1.7,
-            2.1
-        ],
-        "ExtraLargeEnemyDamageResistanceD": [
-            1.5,
-            1.55,
-            1.75,
-            1.9
-        ],
-        "EnemyDamageResistance": [
-            1.4,
-            1.5,
-            1.6,
-            1.75
-        ],
-        "SmallEnemyDamageResistance": [
-            1.2,
-            1.2,
-            1.2,
-            1.2
-        ],
-        "EnemyDamageModifier": [
-            3.8,
-            4.1,
-            4.4,
-            4.6
-        ],
-        "EnemyCountModifier": [
-            2.3,
-            2.5,
-            2.9,
-            3.5
-        ],
-        "EncounterDifficulty": [
-            {
-                "weight": 1,
-                "min": 725,
-                "max": 900
-            }
-        ],
-        "StationaryDifficulty": [
-            {
-                "weight": 1,
-                "min": 800,
-                "max": 950
-            }
-        ],
-        "EnemyWaveInterval": [
-            {
-                "weight": 0.39,
-                "min": 120,
-                "max": 150
-            },
-            {
-                "weight": 0.5,
-                "min": 110,
-                "max": 140
-            },
-            {
-                "weight": 0.1,
-                "min": 90,
-                "max": 90
-            },
-            {
-                "weight": 0.01,
-                "min": 1,
-                "max": 1
-            }
-        ],
-        "EnemyNormalWaveInterval": [
-            {
-                "weight": 0.6,
-                "min": 150,
-                "max": 180
-            },
-            {
-                "weight": 0.3,
-                "min": 170,
-                "max": 190
-            },
-            {
-                "weight": 0.1,
-                "min": 0,
-                "max": 0
-            }
-        ],
-        "EnemyNormalWaveDifficulty": [
-            {
-                "weight": 0.2,
-                "min": 2000,
-                "max": 2000
-            },
-            {
-                "weight": 0.8,
-                "min": 800,
-                "max": 900
-            }
-        ],
-        "EnemyDiversity": [
-            {
-                "weight": 0.22,
-                "min": 1,
-                "max": 3
-            },
-            {
-                "weight": 0.4,
-                "min": 4,
-                "max": 6
-            },
-            {
-                "weight": 0.23,
-                "min": 7,
-                "max": 10
-            },
-            {
-                "weight": 0.15,
-                "min": 1,
-                "max": 1
-            }
-        ],
-        "StationaryEnemyDiversity": [
-            {
-                "weight": 1,
-                "min": 8,
-                "max": 8
-            }
-        ],
-        "VeteranNormal": [
-            {
-                "weight": 0.9,
-                "min": 0.7,
-                "max": 0.8
-            },
-            {
-                "weight": 0.1,
-                "min": 1,
-                "max": 1
-            }
-        ],
-        "VeteranLarge": [
-            {
-                "weight": 1,
-                "min": 0.3,
-                "max": 0.3
-            }
-        ],
-        "EnvironmentalDamageModifier": 1.6,
-        "PointExtractionScalar": 1.6,
-        "FriendlyFireModifier": 1.1,
-        "WaveStartDelayScale": 0,
-        "SpeedModifier": 1.35,
-        "AttackCooldownModifier": 2,
-        "ProjectileSpeedModifier": 1.9,
-        "HealthRegenerationMax": 0.4,
-        "ReviveHealthRatio": 0.4,
-        "BaseHazard": "Hazard 5"
-    },
-    "Pools": {
-        "DisruptiveEnemyPoolCount": {
-            "min": 10,
-            "max": 10
-        },
-        "MinPoolSize": 50,
-        "EnemyPool": {
-            "clear": false,
-            "add": [],
-            "remove": [
-                "ED_Terminator",
-                "ED_InfectedMule"
-            ]
-        },
-        "CommonEnemies": {
-            "clear": false,
-            "add": [
-                "ED_Sentinel",
-                "ED_Bomber_Explosive",
-                "ED_JellyBreeder_Swarm",
-                "ED_Jelly_Swarmer",
-                "ED_Spider_Stalker",
-                "ED_Spider_Grunt_Guard_Elite",
-                "ED_JellyBreeder_RockpoxPlague",
-                "ED_Spider_Boss_TwinA_Weak",
-                "ED_Spider_RapidShooter_Turbo",
-                "ED_Spider_ExploderTank_small"
-            ],
-            "remove": []
-        },
-        "SpecialEnemies": {
-            "clear": false,
-            "add": [],
-            "remove": []
-        },
-        "DisruptiveEnemies": {
-            "clear": false,
-            "add": [
-                "ED_PatrolBot",
-                "ED_Shredder"
-            ],
-            "remove": []
-        },
-        "StationaryPool": {
-            "clear": false,
-            "add": [
-                "ED_Sprout_Normal",
-                "ED_ShootingPlant_Elite"
-            ],
-            "remove": []
-        }
-    },
-    "EnemiesNoSync": {
-        "ED_CaveLeech": {
-            "Base": "ED_CaveLeech",
-            "TimeDilation": 2,
-            "DifficultyRating": 100
-        },
-        "ED_Sentinel": {
-            "Base": "ED_Spider_Tank_HeavySpawn",
-            "DifficultyRating": 50,
-            "Rarity": 5.125,
-            "SpawnAmountModifier": 1,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 30,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true,
-            "SpawnSpread": 5000
-        },
-        "ED_Bomber_Explosive": {
-            "Base": "ED_Bomber_Explosive",
-            "DifficultyRating": 90,
-            "Rarity": 5.25,
-            "SpawnAmountModifier": 1,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 3,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_JellyBreeder_Swarm": {
-            "Resistances": {
-                "DamageMultiplier": 2
-            },
-            "Base": "ED_JellyBreeder",
-            "CanBeUsedForConstantPressure": false,
-            "CanBeUsedInEncounters": false,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 1,
-            "DifficultyRating": 200,
-            "Rarity": 5.875,
-            "SpawnAmountModifier": 1
-        },
-        "ED_PatrolBot": {
-            "Base": "ED_PatrolBot",
-            "DifficultyRating": 110,
-            "Rarity": 5.25,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 2,
-            "SpawnAmountModifier": 0.75,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Shredder": {
-            "Base": "ED_Shredder",
-            "DifficultyRating": 15,
-            "Rarity": 5.375,
-            "MinSpawnCount": 10,
-            "MaxSpawnCount": 100,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Spider_Spawn": {
-            "Resistances": {
-                "DamageMultiplier": 2.691
-            },
-            "Base": "ED_Spider_Grunt_Attacker"
-        },
-        "ED_SpiderSpawner": {
-            "Resistances": {
-                "FireDamageMultiplier": 3.95
-            },
-            "Base": "ED_SpiderSpawner",
-            "DifficultyRating": 120
-        },
-        "ED_Spider_Grunt": {
-            "Base": "ED_Spider_Grunt",
-            "Rarity": 1,
-            "DifficultyRating": 10,
-            "MaxSpawnCount": 160,
-            "SpawnAmountModifier": 0.65,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Spider_Tank": {
-            "Base": "ED_Spider_Tank",
-            "Rarity": 4,
-            "DifficultyRating": 10,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 2,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Mactera_Shooter_Normal": {
-            "Base": "ED_Mactera_Shooter_Normal",
-            "DifficultyRating": 30,
-            "Rarity": 5.125,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Spider_Spitter": {
-            "Base": "ED_Spider_Spitter",
-            "DifficultyRating": 20,
-            "SpawnAmountModifier": 1,
-            "Rarity": 5.125,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Spider_Shooter": {
-            "Base": "ED_Spider_Shooter",
-            "DifficultyRating": 35,
-            "SpawnAmountModifier": 1,
-            "Rarity": 5.125,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Spider_RapidShooter": {
-            "Base": "ED_Spider_RapidShooter",
-            "Rarity": 5.25,
-            "CanBeUsedForConstantPressure": true,
-            "DifficultyRating": 47.5,
-            "MaxSpawnCount": 2,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_EggSpider": {
-            "PST_MovementSpeed": 0.75,
-            "Base": "ED_Spider_Exploder"
-        },
-        "ED_TunnelSwarmer": {
-            "Resistances": {
-                "DamageMultiplier": 0.433
-            },
-            "Base": "ED_Spider_Tank_HeavySpawn_swarmer",
-            "SpawnSpread": 400
-        },
-        "ED_Jelly_Spawn": {
-            "PST_MovementSpeed": 0.75,
-            "Base": "ED_Spider_Exploder"
-        },
-        "ED_Spider_Exploder": {
-            "PST_MovementSpeed": 1.5,
-            "Base": "ED_Spider_Exploder",
-            "DifficultyRating": 10,
-            "Rarity": 5,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": false
-        },
-        "ED_Grabber": {
-            "PST_MovementSpeed": 1.5,
-            "Base": "ED_Grabber",
-            "DifficultyRating": 70,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 1,
-            "Rarity": 5.25,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true,
-            "SpawnSpread": 5000
-        },
-        "ED_Mactera_TripleShooter": {
-            "Base": "ED_Mactera_TripleShooter",
-            "Rarity": 5.25,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_JellyBreeder": {
-            "Resistances": {
-                "DamageMultiplier": 2
-            },
-            "Base": "ED_JellyBreeder"
-        },
-        "ED_Spider_Swarmer": {
-            "Base": "ED_Spider_Swarmer",
-            "DifficultyRating": 5,
-            "MinSpawnCount": 15,
-            "MaxSpawnCount": 100,
-            "Rarity": 3.5,
-            "CanBeUsedForConstantPressure": true,
-            "SpawnAmountModifier": 1
-        },
-        "ED_Spider_Buffer": {
-            "Base": "ED_Spider_Buffer",
-            "DifficultyRating": 45,
-            "SpawnAmountModifier": 1,
-            "MaxSpawnCount": 3,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true,
-            "Rarity": 5.125
-        },
-        "ED_Woodlouse": {
-            "Base": "ED_Woodlouse",
-            "DifficultyRating": 70,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "MaxSpawnCount": 3,
-            "CanBeUsedInEncounters": true,
-            "Rarity": 5.25
-        },
-        "ED_Bomber": {
-            "Base": "ED_Bomber",
-            "DifficultyRating": 47.5,
-            "MaxSpawnCount": 3,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedInEncounters": true,
-            "CanBeUsedForConstantPressure": true,
-            "Rarity": 5.25
-        },
-        "ED_ShootingPlant": {
-            "Base": "ED_ShootingPlant",
-            "DifficultyRating": 100
-        },
-        "ED_Spider_ExploderTank": {
-            "PST_MovementSpeed": 1.5,
-            "Base": "ED_Spider_ExploderTank",
-            "TimeDilation": 1,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 1,
-            "Rarity": 6,
-            "SpawnAmountModifier": 1,
-            "DifficultyRating": 100,
-            "SpawnSpread": 16000
-        },
-        "ED_Jelly_Swarmer": {
-            "Base": "ED_Jelly_Swarmer",
-            "DifficultyRating": 10,
-            "Rarity": 5.125,
-            "MinSpawnCount": 10,
-            "MaxSpawnCount": 100,
-            "SpawnAmountModifier": 1
-        },
-        "ED_Woodlouse_Youngling": {
-            "Base": "ED_Woodlouse_Youngling",
-            "DifficultyRating": 30,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 10,
-            "Rarity": 5.125,
-            "CanBeUsedInEncounters": true,
-            "CanBeUsedForConstantPressure": true
-        },
-        "ED_Shark": {
-            "Base": "ED_Shark",
-            "DifficultyRating": 45,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 2,
-            "Rarity": 5.25,
-            "CanBeUsedInEncounters": true,
-            "CanBeUsedForConstantPressure": true
-        },
-        "ED_Spider_ShieldTank": {
-            "PST_MovementSpeed": 2,
-            "Base": "ED_Spider_ShieldTank",
-            "TimeDilation": 1
-        },
-        "ED_Spider_Stalker": {
-            "Base": "ED_Spider_Stalker",
-            "DifficultyRating": 90,
-            "Rarity": 5.25,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 5,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true,
-            "SpawnSpread": 5000
-        },
-        "ED_PlagueLarva": {
-            "PST_MovementSpeed": 1,
-            "Resistances": {
-                "DamageMultiplier": 6.75
-            },
-            "Base": "ED_Spider_Lobber"
-        },
-        "ED_Spider_Lobber": {
-            "Base": "ED_Spider_Lobber",
-            "DifficultyRating": 60,
-            "Rarity": 5.25,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 10,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true
-        },
-        "ED_Spider_Stinger": {
-            "Resistances": {
-                "DamageMultiplier": 1
-            },
-            "Base": "ED_Spider_Stinger",
-            "DifficultyRating": 70,
-            "Rarity": 5.25,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 3,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": true,
-            "Scale": 1
-        },
-        "ED_Spider_Grunt_Guard_Elite": {
-            "Resistances": {
-                "DamageMultiplier": 1.396
-            },
-            "Base": "ED_Spider_Grunt_Guard",
-            "DifficultyRating": 90,
-            "Rarity": 5.25,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 1,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": false,
-            "Elite": true
-        },
-        "ED_Spider_RapidShooter_Turbo": {
-            "Base": "ED_Spider_RapidShooter_Turbo",
-            "DifficultyRating": 150,
-            "Rarity": 5.875,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 1,
-            "SpawnAmountModifier": 1,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": false
-        },
-        "ED_JellyBreeder_RockpoxPlague": {
-            "Resistances": {
-                "DamageMultiplier": 2
-            },
-            "Base": "ED_JellyBreeder_RockpoxPlague",
-            "DifficultyRating": 200,
-            "Rarity": 9,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 0,
-            "SpawnAmountModifier": 10,
-            "CanBeUsedForConstantPressure": true,
-            "CanBeUsedInEncounters": false,
-            "TimeDilation": 0.25
-        },
-        "ED_Spider_Boss_TwinA_Weak": {
-            "Resistances": {
-                "DamageMultiplier": 13.125
-            },
-            "Base": "ED_Spider_Boss_TwinA",
-            "DifficultyRating": 150,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 0,
-            "Rarity": 5.5,
-            "CanBeUsedInEncounters": false,
-            "CanBeUsedForConstantPressure": true,
-            "SpawnAmountModifier": 2
-        },
-        "ED_Spider_ExploderTank_small": {
-            "Resistances": {
-                "DamageMultiplier": 3.038
-            },
-            "Base": "ED_Spider_ExploderTank",
-            "DifficultyRating": 110,
-            "Rarity": 5.125,
-            "Scale": 0.5,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 2,
-            "CanBeUsedInEncounters": false,
-            "CanBeUsedForConstantPressure": true,
-            "SpawnAmountModifier": 1
-        },
-        "ED_Sprout_Normal": {
-            "Resistances": {
-                "DamageMultiplier": 1.2
-            },
-            "Base": "ED_Sprout_Normal",
-            "DifficultyRating": 80,
-            "MinSpawnCount": 1,
-            "MaxSpawnCount": 9999,
-            "Rarity": 3,
-            "CanBeUsedInEncounters": true,
-            "CanBeUsedForConstantPressure": false,
-            "SpawnAmountModifier": 0.5
-        },
-		"ED_ShootingPlant_Elite": {
-		  "DisplayName": "Elite Spitball Infector",
-		  "Base": "ED_ShootingPlant",
-		  "Elite": true,
-		  "ForceEliteBase": "ED_Spider_ExploderTank",
-		  "Rarity": 3,
-		  "DifficultyRating": 150,
-		  "AttackDamageMultiplier": 0.2,
-		  "Resistances": {
-			"DamageMultiplier": 2.96666
-		  },
-		  "MaxSpawnCount": 3,
-		  "MinSpawnCount": 1,
-		  "Projectile": "PRJ_ChargedBlasterShot",
-		  "Direct": {
-			"Float:PawnSensing.SightRadius": 1250
-		  }
-		}
-    },
-    "EscortMule": {
-        "FriendlyFireModifier": 0.1,
-        "BigHitDamageModifier": 0.75,
-        "BigHitDamageReductionThreshold": 0,
-        "NeutralDamageModifier": 0.1
+  "Name": "ND Lite",
+  "Description": "The relatively fair successor to Lx2 and Lx2EX that also is an initial experiment with MEV. Latest version: Updated for Season 5; StationaryEnemyDiversity 6->8, DisruptiveEnemyPoolCount 9->10.",
+  "Resupply": {
+    "Cost": {
+      "Mutate": "ByResuppliesCalled",
+      "Values": [
+        40,
+        50
+      ]
     }
+  },
+  "Caps": {
+    "MaxActiveCritters": 40,
+    "MaxActiveSwarmers": [
+      90
+    ],
+    "MaxActiveEnemies": [
+      90
+    ]
+  },
+  "DifficultySetting": {
+    "ExtraLargeEnemyDamageResistance": [
+      1,
+      1.3,
+      1.7,
+      2.1
+    ],
+    "ExtraLargeEnemyDamageResistanceB": [
+      1,
+      1.3,
+      1.5,
+      1.7
+    ],
+    "ExtraLargeEnemyDamageResistanceC": [
+      1,
+      1.3,
+      1.7,
+      2.1
+    ],
+    "ExtraLargeEnemyDamageResistanceD": [
+      1.5,
+      1.55,
+      1.75,
+      1.9
+    ],
+    "EnemyDamageResistance": [
+      1.4,
+      1.5,
+      1.6,
+      1.75
+    ],
+    "SmallEnemyDamageResistance": [
+      1.2,
+      1.2,
+      1.2,
+      1.2
+    ],
+    "EnemyDamageModifier": [
+      3.8,
+      4.1,
+      4.4,
+      4.6
+    ],
+    "EnemyCountModifier": [
+      2.3,
+      2.5,
+      2.9,
+      3.5
+    ],
+    "EncounterDifficulty": [
+      {
+        "weight": 1,
+        "min": 725,
+        "max": 800
+      }
+    ],
+    "StationaryDifficulty": [
+      {
+        "weight": 1,
+        "min": 600,
+        "max": 750
+      }
+    ],
+    "EnemyWaveInterval": [
+      {
+        "weight": 0.39,
+        "min": 120,
+        "max": 150
+      },
+      {
+        "weight": 0.5,
+        "min": 110,
+        "max": 140
+      },
+      {
+        "weight": 0.1,
+        "min": 90,
+        "max": 90
+      },
+      {
+        "weight": 0.01,
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "EnemyNormalWaveInterval": [
+      {
+        "weight": 0.6,
+        "min": 150,
+        "max": 180
+      },
+      {
+        "weight": 0.3,
+        "min": 170,
+        "max": 190
+      },
+      {
+        "weight": 0.1,
+        "min": 0,
+        "max": 0
+      }
+    ],
+    "EnemyNormalWaveDifficulty": [
+      {
+        "weight": 0.2,
+        "min": 2000,
+        "max": 2000
+      },
+      {
+        "weight": 0.8,
+        "min": 800,
+        "max": 900
+      }
+    ],
+    "EnemyDiversity": [
+      {
+        "weight": 0.22,
+        "min": 1,
+        "max": 3
+      },
+      {
+        "weight": 0.4,
+        "min": 4,
+        "max": 6
+      },
+      {
+        "weight": 0.23,
+        "min": 7,
+        "max": 10
+      },
+      {
+        "weight": 0.15,
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "StationaryEnemyDiversity": [
+      {
+        "weight": 1,
+        "min": 8,
+        "max": 8
+      }
+    ],
+    "VeteranNormal": [
+      {
+        "weight": 0.9,
+        "min": 0.7,
+        "max": 0.8
+      },
+      {
+        "weight": 0.1,
+        "min": 1,
+        "max": 1
+      }
+    ],
+    "VeteranLarge": [
+      {
+        "weight": 1,
+        "min": 0.3,
+        "max": 0.3
+      }
+    ],
+    "EnvironmentalDamageModifier": 1.6,
+    "PointExtractionScalar": 1.6,
+    "FriendlyFireModifier": 1.1,
+    "WaveStartDelayScale": 0,
+    "SpeedModifier": 1.35,
+    "AttackCooldownModifier": 2,
+    "ProjectileSpeedModifier": 1.9,
+    "HealthRegenerationMax": 0.4,
+    "ReviveHealthRatio": 0.4,
+    "BaseHazard": "Hazard 5"
+  },
+  "Pools": {
+    "DisruptiveEnemyPoolCount": {
+      "min": 10,
+      "max": 10
+    },
+    "MinPoolSize": 50,
+    "EnemyPool": {
+      "clear": false,
+      "add": [],
+      "remove": [
+        "ED_Terminator",
+        "ED_InfectedMule"
+      ]
+    },
+    "CommonEnemies": {
+      "clear": false,
+      "add": [
+        "ED_Sentinel",
+        "ED_Bomber_Explosive",
+        "ED_JellyBreeder_Swarm",
+        "ED_Jelly_Swarmer",
+        "ED_Spider_Stalker",
+        "ED_Spider_Grunt_Guard_Elite",
+        "ED_JellyBreeder_RockpoxPlague",
+        "ED_Spider_Boss_TwinA_Weak",
+        "ED_Spider_ExploderTank_small"
+      ],
+      "remove": []
+    },
+    "SpecialEnemies": {
+      "clear": false,
+      "add": [],
+      "remove": []
+    },
+    "DisruptiveEnemies": {
+      "clear": false,
+      "add": [
+        "ED_PatrolBot",
+        "ED_Shredder"
+      ],
+      "remove": []
+    },
+    "StationaryPool": {
+      "clear": false,
+      "add": [
+        "ED_Sprout_Normal",
+        "ED_ShootingPlant_Elite"
+      ],
+      "remove": []
+    }
+  },
+  "EnemiesNoSync": {
+    "ED_CaveLeech": {
+      "Base": "ED_CaveLeech",
+      "TimeDilation": 2,
+      "DifficultyRating": 100
+    },
+    "ED_Sentinel": {
+      "Base": "ED_Spider_Tank_HeavySpawn",
+      "DifficultyRating": 50,
+      "Rarity": 5.125,
+      "SpawnAmountModifier": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 30,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "SpawnSpread": 5000
+    },
+    "ED_Bomber_Explosive": {
+      "Base": "ED_Bomber_Explosive",
+      "DifficultyRating": 90,
+      "Rarity": 5.25,
+      "SpawnAmountModifier": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 3,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_JellyBreeder_Swarm": {
+      "Resistances": {
+        "DamageMultiplier": 2
+      },
+      "Base": "ED_JellyBreeder",
+      "CanBeUsedForConstantPressure": false,
+      "CanBeUsedInEncounters": false,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 1,
+      "DifficultyRating": 200,
+      "Rarity": 5.875,
+      "SpawnAmountModifier": 1
+    },
+    "ED_PatrolBot": {
+      "Base": "ED_PatrolBot",
+      "DifficultyRating": 110,
+      "Rarity": 5.25,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "SpawnAmountModifier": 0.75,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Shredder": {
+      "Base": "ED_Shredder",
+      "DifficultyRating": 15,
+      "Rarity": 5.375,
+      "MinSpawnCount": 10,
+      "MaxSpawnCount": 100,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Spider_Spawn": {
+      "Resistances": {
+        "DamageMultiplier": 2.691
+      },
+      "Base": "ED_Spider_Grunt_Attacker"
+    },
+    "ED_SpiderSpawner": {
+      "Resistances": {
+        "FireDamageMultiplier": 3.95
+      },
+      "Base": "ED_SpiderSpawner",
+      "DifficultyRating": 120
+    },
+    "ED_Spider_Grunt": {
+      "Base": "ED_Spider_Grunt",
+      "Rarity": 1,
+      "DifficultyRating": 10,
+      "MaxSpawnCount": 160,
+      "SpawnAmountModifier": 0.65,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Spider_Tank": {
+      "Base": "ED_Spider_Tank",
+      "Rarity": 4,
+      "DifficultyRating": 10,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Mactera_Shooter_Normal": {
+      "Base": "ED_Mactera_Shooter_Normal",
+      "DifficultyRating": 30,
+      "Rarity": 5.125,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Spider_Spitter": {
+      "Base": "ED_Spider_Spitter",
+      "DifficultyRating": 20,
+      "SpawnAmountModifier": 1,
+      "Rarity": 5.125,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Spider_Shooter": {
+      "Base": "ED_Spider_Shooter",
+      "DifficultyRating": 35,
+      "SpawnAmountModifier": 1,
+      "Rarity": 5.125,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Spider_RapidShooter": {
+      "Base": "ED_Spider_RapidShooter",
+      "Rarity": 5.25,
+      "CanBeUsedForConstantPressure": true,
+      "DifficultyRating": 47.5,
+      "MaxSpawnCount": 2,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_EggSpider": {
+      "PST_MovementSpeed": 0.75,
+      "Base": "ED_Spider_Exploder"
+    },
+    "ED_TunnelSwarmer": {
+      "Resistances": {
+        "DamageMultiplier": 0.433
+      },
+      "Base": "ED_Spider_Tank_HeavySpawn_swarmer",
+      "SpawnSpread": 400
+    },
+    "ED_Jelly_Spawn": {
+      "PST_MovementSpeed": 0.75,
+      "Base": "ED_Spider_Exploder"
+    },
+    "ED_Spider_Exploder": {
+      "PST_MovementSpeed": 1.5,
+      "Base": "ED_Spider_Exploder",
+      "DifficultyRating": 10,
+      "Rarity": 5,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false
+    },
+    "ED_Grabber": {
+      "PST_MovementSpeed": 1.5,
+      "Base": "ED_Grabber",
+      "DifficultyRating": 70,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 1,
+      "Rarity": 5.25,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "SpawnSpread": 5000
+    },
+    "ED_Mactera_TripleShooter": {
+      "Base": "ED_Mactera_TripleShooter",
+      "Rarity": 5.25,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_JellyBreeder": {
+      "Resistances": {
+        "DamageMultiplier": 2
+      },
+      "Base": "ED_JellyBreeder"
+    },
+    "ED_Spider_Swarmer": {
+      "Base": "ED_Spider_Swarmer",
+      "DifficultyRating": 5,
+      "MinSpawnCount": 15,
+      "MaxSpawnCount": 100,
+      "Rarity": 3.5,
+      "CanBeUsedForConstantPressure": true,
+      "SpawnAmountModifier": 1
+    },
+    "ED_Spider_Buffer": {
+      "Base": "ED_Spider_Buffer",
+      "DifficultyRating": 45,
+      "SpawnAmountModifier": 1,
+      "MaxSpawnCount": 3,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "Rarity": 5.125
+    },
+    "ED_Woodlouse": {
+      "Base": "ED_Woodlouse",
+      "DifficultyRating": 70,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedForConstantPressure": true,
+      "MaxSpawnCount": 3,
+      "CanBeUsedInEncounters": true,
+      "Rarity": 5.25
+    },
+    "ED_Bomber": {
+      "Base": "ED_Bomber",
+      "DifficultyRating": 47.5,
+      "MaxSpawnCount": 3,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedInEncounters": true,
+      "CanBeUsedForConstantPressure": true,
+      "Rarity": 5.25
+    },
+    "ED_ShootingPlant": {
+      "Base": "ED_ShootingPlant",
+      "DifficultyRating": 100
+    },
+    "ED_Spider_ExploderTank": {
+      "PST_MovementSpeed": 1.5,
+      "Base": "ED_Spider_ExploderTank",
+      "TimeDilation": 1,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 1,
+      "Rarity": 6,
+      "SpawnAmountModifier": 1,
+      "DifficultyRating": 100,
+      "SpawnSpread": 16000
+    },
+    "ED_Jelly_Swarmer": {
+      "Base": "ED_Jelly_Swarmer",
+      "DifficultyRating": 10,
+      "Rarity": 5.125,
+      "MinSpawnCount": 10,
+      "MaxSpawnCount": 100,
+      "SpawnAmountModifier": 1
+    },
+    "ED_Woodlouse_Youngling": {
+      "Base": "ED_Woodlouse_Youngling",
+      "DifficultyRating": 30,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 10,
+      "Rarity": 5.125,
+      "CanBeUsedInEncounters": true,
+      "CanBeUsedForConstantPressure": true
+    },
+    "ED_Shark": {
+      "Base": "ED_Shark",
+      "DifficultyRating": 45,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "Rarity": 5.25,
+      "CanBeUsedInEncounters": true,
+      "CanBeUsedForConstantPressure": true
+    },
+    "ED_Spider_ShieldTank": {
+      "PST_MovementSpeed": 2,
+      "Base": "ED_Spider_ShieldTank",
+      "TimeDilation": 1
+    },
+    "ED_Spider_Stalker": {
+      "Base": "ED_Spider_Stalker",
+      "DifficultyRating": 90,
+      "Rarity": 5.25,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 5,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "SpawnSpread": 5000
+    },
+    "ED_PlagueLarva": {
+      "PST_MovementSpeed": 1,
+      "Resistances": {
+        "DamageMultiplier": 6.75
+      },
+      "Base": "ED_Spider_Lobber"
+    },
+    "ED_Spider_Lobber": {
+      "Base": "ED_Spider_Lobber",
+      "DifficultyRating": 60,
+      "Rarity": 5.25,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 10,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true
+    },
+    "ED_Spider_Stinger": {
+      "Resistances": {
+        "DamageMultiplier": 1
+      },
+      "Base": "ED_Spider_Stinger",
+      "DifficultyRating": 70,
+      "Rarity": 5.25,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 3,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": true,
+      "Scale": 1
+    },
+    "ED_Spider_Grunt_Guard_Elite": {
+      "Resistances": {
+        "DamageMultiplier": 1.396
+      },
+      "Base": "ED_Spider_Grunt_Guard",
+      "DifficultyRating": 90,
+      "Rarity": 5.25,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 1,
+      "SpawnAmountModifier": 1,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "Elite": true
+    },
+    "ED_JellyBreeder_RockpoxPlague": {
+      "Resistances": {
+        "DamageMultiplier": 2
+      },
+      "Base": "ED_JellyBreeder_RockpoxPlague",
+      "DifficultyRating": 200,
+      "Rarity": 9,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 0,
+      "SpawnAmountModifier": 10,
+      "CanBeUsedForConstantPressure": true,
+      "CanBeUsedInEncounters": false,
+      "TimeDilation": 0.25
+    },
+    "ED_Spider_Boss_TwinA_Weak": {
+      "Resistances": {
+        "DamageMultiplier": 13.125
+      },
+      "Base": "ED_Spider_Boss_TwinA",
+      "DifficultyRating": 150,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 0,
+      "Rarity": 5.5,
+      "CanBeUsedInEncounters": false,
+      "CanBeUsedForConstantPressure": true,
+      "SpawnAmountModifier": 2
+    },
+    "ED_Spider_ExploderTank_small": {
+      "Resistances": {
+        "DamageMultiplier": 3.038
+      },
+      "Base": "ED_Spider_ExploderTank",
+      "DifficultyRating": 110,
+      "Rarity": 5.125,
+      "Scale": 0.5,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 2,
+      "CanBeUsedInEncounters": false,
+      "CanBeUsedForConstantPressure": true,
+      "SpawnAmountModifier": 1
+    },
+    "ED_Sprout_Normal": {
+      "Resistances": {
+        "DamageMultiplier": 1.2
+      },
+      "Base": "ED_Sprout_Normal",
+      "DifficultyRating": 80,
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 9999,
+      "Rarity": 3,
+      "CanBeUsedInEncounters": true,
+      "CanBeUsedForConstantPressure": false,
+      "SpawnAmountModifier": 0.5
+    },
+    "ED_ShootingPlant_Elite": {
+      "DisplayName": "Elite Spitball Infector",
+      "Base": "ED_ShootingPlant",
+      "Elite": true,
+      "ForceEliteBase": "ED_Spider_ExploderTank",
+      "Rarity": 3,
+      "DifficultyRating": 150,
+      "AttackDamageMultiplier": 0.2,
+      "Resistances": {
+        "DamageMultiplier": 2.96666
+      },
+      "MaxSpawnCount": 3,
+      "MinSpawnCount": 1,
+      "Projectile": "PRJ_ChargedBlasterShot",
+      "Direct": {
+        "Float:PawnSensing.SightRadius": 1250
+      }
+    }
+  },
+  "EscortMule": {
+    "FriendlyFireModifier": 0.1,
+    "BigHitDamageModifier": 0.75,
+    "BigHitDamageReductionThreshold": 0,
+    "NeutralDamageModifier": 0.1
+  }
 }
