@@ -632,7 +632,7 @@
       "DifficultyRating": 80,
       "MaxSpawnCount": 2,
       "MinSpawnCount": 0,
-	  "CanBeUsedInEncounters": false,
+	  "CanBeUsedInEncounters": true,
       "CanBeUsedForConstantPressure": true,
       "Resistances": {
         "DamageMultiplier": 0.86666
