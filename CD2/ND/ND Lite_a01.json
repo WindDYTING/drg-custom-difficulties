@@ -629,16 +629,27 @@
       "Base": "ED_Spider_Lobber",
       "Elite": true,
       "ForceEliteBase": "ED_Spider_ExploderTank",
-      "DifficultyRating": 80,
+      "DifficultyRating": 100,
       "MaxSpawnCount": 2,
       "MinSpawnCount": 0,
-	  "CanBeUsedInEncounters": true,
+      "CanBeUsedInEncounters": true,
+      "AttackDamageMultiplier": 0.45,
       "CanBeUsedForConstantPressure": true,
       "Resistances": {
         "DamageMultiplier": 0.86666
       },
       "Rarity": 3,
-      "Projectile": "PRJ_Crye_SnowBall_C",
+      "Projectile": {
+        "Mutate": "RandomChoice",
+        "Choices": [
+          "PRJ_Crye_SnowBall_C",
+          "PRJ_Base_Spider_Lobber_Projectile_C"
+        ],
+        "Weights": [
+          0.2,
+          0.8
+        ]
+      },
       "Temperature": {
         "FozenDamageBonusScale": 0.25
       },
