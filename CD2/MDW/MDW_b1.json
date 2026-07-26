@@ -433,7 +433,7 @@
       "Add": [
 	    "ED_MonkeyBarrager",
         "ED_ShootingPlant_Spawner",
-        "ED_FacilityTurret_Korlok_Weak",
+        "ED_FacilityTurret_FireSniper",
         "ED_FacilityTurret_Barrier_Weak",
         "ED_FacilityTurret_Burst_Weak",
         {
@@ -1163,33 +1163,46 @@
         "TemperatureChangeScale": 1
       }
     },
-    "ED_FacilityTurret_Korlok_Weak": {
+    "ED_FacilityTurret_FireSniper": {
       "Base": "ED_FacilityTurret_Sniper",
       "DisplayName": "Korlok Turret",
-      "Projectile": "PRJ_HydraWeed_Shooter_C",
+      "Projectile": "PRJ_FlameWall_C",
       "SpawnSpread": 1000,
       "DifficultyRating": 100,
+	  "Temperature": {
+        "DieIfBurning": false,
+        "FreezeTemperature": -100,
+        "BurnTemperature": 50,
+        "DouseFireTemperature": 0,
+        "FozenDamageBonusScale": 3,
+        "CoolingRate": 10
+      },
       "MinSpawnCount": 1,
-      "MaxSpawnCount": 4,
       "Rarity": 3,
       "SpawnAmountModifier": 0.33,
       "Elite": true,
+	  "HealthMultiplier": 2,
       "ForceEliteBase": "ED_Spider_Grunt_Attacker",
       "Direct": {
-        "Float:LockOnTime": 0.375,
-        "Float:BurstInterval": 1.125
+        "Float:BurstInterval": 0.666,
+        "Float:TurretRotationSpeed": 100,
+        "Float:LockonTime": 2,
+        "Float:FireInterval": 0.4,
+        "Float:AimZOffset": 0.0
       },
       "Resistances": {
-        "DamageMultiplier": [
-          1.25,
-          1.2667,
-          1.4583,
-          1.5833
-        ]
+        "FireDamageMultiplier": 1
       },
-      "Temperature": {
-        "TemperatureChangeScale": 1
-      }
+	  "AttackDamageMultiplier": 0.125,
+	  "Scale": 2,
+	  "Materials": [
+        "M_Plague_MedbayScan",
+        "M_GlobalSkin_RoyalBlue_S05",
+        "M_VanityBase_EyePupil",
+        "M_Greybox_Light_PinkX20",
+        "M_CaveHolo_Transition",
+        "M_CaveHolo_Transition"
+      ]
     },
     "ED_Sprout_Normal": {
       "CanBeUsedForConstantPressure": false,
