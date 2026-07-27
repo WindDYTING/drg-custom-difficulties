@@ -1,0 +1,323 @@
+{
+  "Name": "Oops Only Bulks (Ice And Fire)",
+  "Caps": {
+    "MaxActiveSwarmers": [
+      90,
+      120,
+      180
+    ],
+    "MaxActiveEnemies": [
+      90,
+      120,
+      180
+    ]
+  },
+  "Resupply": {
+    "Cost": 40
+  },
+  "Pools": {
+    "EnemyPool": {
+      "clear": true,
+      "add": [
+        "ED_Sprout_Normal_Fire",
+        "OOPSONLYTHIS"
+      ],
+      "remove": []
+    },
+    "CommonEnemies": {
+      "clear": true,
+      "add": [
+        "ED_Sprout_Normal_Fire",
+        "OOPSONLYTHIS"
+      ],
+      "remove": [
+        "ED_Spider_Grunt_Attacker",
+        "ED_Mactera_Shooter_Normal",
+        "ED_Mactera_TripleShooter",
+        "ED_Spider_Grunt",
+        "ED_Spider_Grunt_Guard",
+        "ED_Spider_ShieldTank",
+        "ED_Spider_Tank"
+      ]
+    },
+    "SpecialEnemies": {
+      "clear": true,
+      "add": [
+	    "ED_Sprout_Normal_Fire",
+        "OOPSONLYTHIS"
+      ],
+      "remove": [
+        "ED_Mactera_Shooter_Normal",
+        "ED_EggSpider",
+        "ED_Spider_Swarmer",
+        "ED_Spider_Swarmer_Pheromone_NOFX",
+        "ED_TunnelSwarmer"
+      ]
+    },
+    "DisruptiveEnemies": {
+      "clear": true,
+      "add": [
+        "OOPSONLYTHIS"
+      ],
+      "remove": []
+    },
+    "StationaryPool": {
+      "clear": true,
+      "add": [
+        "OOPSONLYTHIS",
+        "ED_Sprout_Normal_Fire"
+      ],
+      "remove": []
+    }
+  },
+  "DifficultySetting": {
+    "BaseHazard": "Hazard 5",
+    "ExtraLargeEnemyDamageResistance": [
+      1,
+      1.3,
+      1.7,
+      2.1
+    ],
+    "ExtraLargeEnemyDamageResistanceB": [
+      1,
+      1.3,
+      1.5,
+      1.7
+    ],
+    "ExtraLargeEnemyDamageResistanceC": [
+      1,
+      1.3,
+      1.7,
+      2.1
+    ],
+    "ExtraLargeEnemyDamageResistanceD": [
+      1.5,
+      1.55,
+      1.75,
+      1.9
+    ],
+    "EnemyDamageResistance": [
+      1.4,
+      1.5,
+      1.6,
+      1.75
+    ],
+    "EnemyDamageModifier": [
+      3.3,
+      3.65,
+      3.9,
+      4.1
+    ],
+    "EnemyCountModifier": [
+      3
+    ],
+    "EncounterDifficulty": [
+      {
+        "weight": 1,
+        "min": 550,
+        "max": 650
+      },
+      {
+        "weight": 6,
+        "min": 450,
+        "max": 750
+      },
+      {
+        "weight": 1,
+        "min": 550,
+        "max": 650
+      }
+    ],
+    "StationaryDifficulty": [
+      {
+        "weight": 1,
+        "min": 100,
+        "max": 120
+      }
+    ],
+    "EnemyWaveInterval": [
+      {
+        "weight": 7.5,
+        "min": 125,
+        "max": 165
+      }
+    ],
+    "EnemyNormalWaveInterval": [
+      {
+        "weight": 4,
+        "min": 170,
+        "max": 210
+      },
+      {
+        "weight": 2,
+        "min": 180,
+        "max": 190
+      }
+    ],
+    "EnemyNormalWaveDifficulty": [
+      {
+        "weight": 1,
+        "min": 550,
+        "max": 650
+      }
+    ],
+    "EnemyDiversity": [
+      {
+        "weight": 2,
+        "min": 4,
+        "max": 4
+      },
+      {
+        "weight": 8,
+        "min": 6,
+        "max": 7
+      }
+    ],
+    "StationaryEnemyDiversity": [
+      {
+        "weight": 1,
+        "min": 4,
+        "max": 6
+      }
+    ],
+    "VeteranNormal": [
+      {
+        "weight": 2,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "weight": 2,
+        "min": 0.5,
+        "max": 0.8
+      }
+    ],
+    "VeteranLarge": 0.2,
+    "EnvironmentalDamageModifier": 1.4,
+    "PointExtractionScalar": 1.4,
+    "FriendlyFireModifier": 0.9,
+    "SpeedModifier": 1.25,
+    "AttackCooldownModifier": 1.75,
+    "ProjectileSpeedModifier": 1.9
+  },
+  "EscortMule": {
+    "FriendlyFireModifier": 0.1,
+    "BigHitDamageModifier": 0.75,
+    "BigHitDamageReductionThreshold": 0,
+    "NeutralDamageModifier": 0.1
+  },
+  "Enemies": {
+    "ED_Spider_Grunt": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Grunt_Attacker": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Grunt_Guard": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Swarmer": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Swarmer_Ice": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Swarmer_Mutated": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Swarmer_Pheromone_NOFX": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Bomber": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Bomber_Ice": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Grabber": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Mactera_Shooter_HeavyVeteran": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Mactera_Shooter_Normal": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_PatrolBot_Caretaker": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Mactera_TripleShooter": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_FacilityTurret_Barrier": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_FacilityTurret_Burst": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_FacilityTurret_Sniper": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_EggSpider": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Shredder": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_TunnelSwarmer": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Exploder_Warning": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Tank_HeavySpawn": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Spider_Exploder": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_FlyingSmartRock": {
+      "Base": "ED_Spider_ExploderTank_Ice"
+    },
+    "ED_Sprout_Normal_Fire": {
+      "Base": "ED_Sprout_Normal",
+      "DisplayName": "Korlok Turret",
+      "Projectile": "PRJ_FlameWall_C",
+      "SpawnSpread": 1000,
+      "DifficultyRating": 100,
+      "Temperature": {
+        "DouseFireTemperature": 0,
+        "FozenDamageBonusScale": 3,
+        "CoolingRate": 10
+      },
+      "MinSpawnCount": 1,
+      "Rarity": 3,
+      "SpawnAmountModifier": 0.33,
+      "HealthMultiplier": 2,
+      "Direct": {
+        "Float:BurstInterval": 0.666,
+        "Float:TurretRotationSpeed": 100,
+        "Float:LockonTime": 2,
+        "Float:FireInterval": 0.4,
+        "Float:AimZOffset": 0
+      },
+      "Resistances": {
+        "FireDamageMultiplier": 1
+      },
+      "AttackDamageMultiplier": 0.075,
+      "Materials": [
+        "M_Plague_MedbayScan",
+        "M_GlobalSkin_RoyalBlue_S05",
+        "M_VanityBase_EyePupil",
+        "M_Greybox_Light_PinkX20",
+        "M_CaveHolo_Transition",
+        "M_CaveHolo_Transition"
+      ]
+    },
+    "OOPSONLYTHIS": {
+      "Base": "ED_Spider_ExploderTank_Ice",
+      "MinSpawnCount": 1,
+      "MaxSpawnCount": 20
+    }
+  }
+}
