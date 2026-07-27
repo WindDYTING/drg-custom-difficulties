@@ -293,7 +293,7 @@
       "MinSpawnCount": 1,
       "Rarity": 3,
       "SpawnAmountModifier": 0.33,
-      "HealthMultiplier": 2,
+      "HealthMultiplier": 1.5,
       "Direct": {
         "Float:BurstInterval": 0.666,
         "Float:TurretRotationSpeed": 100,
@@ -317,7 +317,8 @@
     "OOPSONLYTHIS": {
       "Base": "ED_Spider_ExploderTank_Ice",
       "MinSpawnCount": 1,
-      "MaxSpawnCount": 20
+      "MaxSpawnCount": 20,
+	  "HealthMultiplier": 0.75,
     }
   }
 }
