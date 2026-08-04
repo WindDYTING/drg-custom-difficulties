@@ -450,16 +450,13 @@
       "Base": "ED_Spider_Swarmer"
     },
     "ED_Spider_ExploderTank": {
-      "HealthMultiplier": 0.33,
+      "HealthMultiplier": 0.75,
       "Direct": {
         "Int:NumClusterBombs": {
           "Mutate": "ByMissionType",
           "Default": 8,
           "Salvage": 0
         }
-      },
-      "Movement": {
-        "MaxPawnSpeed": 0.6
       },
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",

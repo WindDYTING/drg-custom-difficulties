@@ -152,7 +152,7 @@
         "weight": 1,
         "min": 180,
         "max": 190
-      }      
+      }
     ],
     "EnemyNormalWaveDifficulty": [
       {
@@ -307,7 +307,7 @@
     }
   },
   "EnemiesNoSync": {
-	"HED_Spider_Buffer": {
+    "HED_Spider_Buffer": {
       "Base": "ED_Spider_Buffer",
       "MaxSpawnCount": 0,
       "Elite": true,
@@ -387,7 +387,7 @@
     },
     "ED_FlyingSmartRock": {
       "Resistances": {
-       "DamageMultiplier": 2
+        "DamageMultiplier": 2
       }
     },
     "ED_Spider_Spawn": {
@@ -396,14 +396,14 @@
       "Resistances": {
         "DamageMultiplier": 1.286
       }
-    }, 
+    },
     "ED_TunnelSwarmer": {
       "Base": "ED_Spider_Grunt",
       "DisplayName": "Glyphid Tunnel Grunt",
       "Resistances": {
         "DamageMultiplier": 1.286
       }
-    },  
+    },
     "ED_EggSpider": {
       "Base": "ED_Spider_Grunt",
       "DisplayName": "Glyphid Egg Grunt",
@@ -669,7 +669,7 @@
       },
       "MinSpawnCount": 1,
       "MaxSpawnCount": 1,
-	  "UsesSpawnRarityModifiers": {
+      "UsesSpawnRarityModifiers": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_RapidShooter",
         "CooldownTime": 60,
@@ -703,7 +703,7 @@
       },
       "MinSpawnCount": 1,
       "MaxSpawnCount": 1,
-	  "UsesSpawnRarityModifiers": {
+      "UsesSpawnRarityModifiers": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Buffer",
         "CooldownTime": 60,
@@ -720,6 +720,7 @@
       "SpawnAmountModifier": 1
     },
     "ED_Spider_ExploderTank": {
+      "HealthMultiplier": 0.75,
       "SpawnSpread": {
         "Mutate": "If",
         "Condition": {
@@ -744,7 +745,7 @@
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_ExploderTank",
         "CooldownTime": 60,
-        "ValueDuringCooldown": 36,
+        "ValueDuringCooldown": 72,
         "DefaultValue": 150
       },
       "MinSpawnCount": 1,
@@ -756,7 +757,7 @@
         "ValueDuringCooldown": 0.1,
         "DefaultValue": 7
       },
-	  "UsesSpawnRarityModifiers": {
+      "UsesSpawnRarityModifiers": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_ExploderTank",
         "CooldownTime": 60,
@@ -827,7 +828,7 @@
         "DefaultValue": 175
       },
       "MinSpawnCount": 1,
-	  "SpawnAmountModifier": 0.5,
+      "SpawnAmountModifier": 1,
       "MaxSpawnCount": 1,
       "Rarity": {
         "Mutate": "EnemyCooldown",
@@ -836,14 +837,13 @@
         "ValueDuringCooldown": 0.1,
         "DefaultValue": 6.5
       },
-	  "UsesSpawnRarityModifiers": {
+      "UsesSpawnRarityModifiers": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Stalker",
         "CooldownTime": 60,
         "ValueDuringCooldown": false,
         "DefaultValue": true
       },
-      "SpawnAmountModifier": 1,
       "StaggerDurationMultiplier": 1,
       "AttackDamageMultiplier": 0.555
     },
@@ -1153,7 +1153,7 @@
             "Phase2Eye": true,
             "Phase3Vent": true,
             "Phase3Eye": true
-          }      
+          }
         },
         "Then": 105,
         "Else": {
@@ -1174,7 +1174,7 @@
       "Locations": 1,
       "PauseOnDisable": true
     },
-	{
+    {
       "Enabled": {
         "Mutate": "EnemyCooldown",
         "EDs": [
