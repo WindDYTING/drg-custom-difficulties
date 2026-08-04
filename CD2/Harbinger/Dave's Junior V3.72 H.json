@@ -1244,12 +1244,12 @@
           "Default": 8,
           "Salvage": 0
         }
-      }
+      },
       "Rarity": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_ExploderTank",
         "CooldownTime": 60,
-        "ValueDuringCooldown": 0.1,
+        "ValueDuringCooldown": 5,
         "DefaultValue": 15
       },
       "UsesSpawnRarityModifiers": {
