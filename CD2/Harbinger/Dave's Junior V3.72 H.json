@@ -750,7 +750,7 @@
       "Distance": 1750,
       "Locations": 1
     },
-	{
+    {
       "Enabled": {
         "Mutate": "EnemyCooldown",
         "EDs": [
@@ -839,7 +839,7 @@
     "NeutralDamageModifier": 0.1
   },
   "EnemiesNoSync": {
-	"HED_Spider_Buffer": {
+    "HED_Spider_Buffer": {
       "Base": "ED_Spider_Buffer",
       "MaxSpawnCount": 0,
       "Elite": true,
@@ -1223,8 +1223,8 @@
       "SpawnAmountModifier": 0.3,
       "MaxSpawnCount": 0
     },
-	"ED_Spider_ExploderTank": {
-	  "CanPlayerStandOn": true,
+    "ED_Spider_ExploderTank": {
+      "CanPlayerStandOn": true,
       "CanBeUsedInEncounters": {
         "Mutate": "ByMissionType",
         "Default": {
@@ -1270,11 +1270,11 @@
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_ExploderTank",
         "CooldownTime": 60,
-        "ValueDuringCooldown": 36,
+        "ValueDuringCooldown": 83,
         "DefaultValue": 120
       }
     },
-	"ED_Spider_Stalker": {
+    "ED_Spider_Stalker": {
       "MaxSpawnCount": 1,
       "SpawnAmountModifier": 0.5,
       "StaggerDurationMultiplier": 1,
@@ -1417,7 +1417,7 @@
         "ED_Mactera_Shooter_Normal": 0.1
       }
     },
-	"ED_Mactera_TripleShooter": {
+    "ED_Mactera_TripleShooter": {
       "Rarity": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Mactera_TripleShooter",
