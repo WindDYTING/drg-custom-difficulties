@@ -371,7 +371,7 @@
     "ReviveHealthRatio": 0.3
   },
   "EnemiesNoSync": {
-	"HED_Spider_Buffer": {
+    "HED_Spider_Buffer": {
       "Base": "ED_Spider_Buffer",
       "MaxSpawnCount": 0,
       "Elite": true,
@@ -450,6 +450,7 @@
       "Base": "ED_Spider_Swarmer"
     },
     "ED_Spider_ExploderTank": {
+      "HealthMultiplier": 0.33,
       "Direct": {
         "Int:NumClusterBombs": {
           "Mutate": "ByMissionType",
@@ -457,7 +458,10 @@
           "Salvage": 0
         }
       },
-	  "CanBeUsedForConstantPressure": {
+      "Movement": {
+        "MaxPawnSpeed": 0.6
+      },
+      "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_ExploderTank",
         "CooldownTime": 60,
@@ -478,11 +482,11 @@
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_ExploderTank",
         "CooldownTime": 60,
-        "ValueDuringCooldown": 0.1,
+        "ValueDuringCooldown": 4,
         "DefaultValue": 7
       }
     },
-	"ED_Mactera_TripleShooter": {
+    "ED_Mactera_TripleShooter": {
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Mactera_TripleShooter",
@@ -513,7 +517,7 @@
     "ED_Spider_Stalker": {
       "AttackDamageMultiplier": 0,
       "StaggerDurationMultiplier": 1,
-	  "CanBeUsedForConstantPressure": {
+      "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Stalker",
         "CooldownTime": 60,
@@ -528,7 +532,7 @@
         "ValueDuringCooldown": 28.5,
         "DefaultValue": 175
       },
-	  "Rarity": {
+      "Rarity": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Stalker",
         "CooldownTime": 60,
@@ -571,7 +575,7 @@
         "DefaultValue": 200
       },
       "StaggerImmunityWindow": 0.5,
-	  "CanBeUsedForConstantPressure": {
+      "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Stinger",
         "CooldownTime": 60,
@@ -592,7 +596,7 @@
         "DefaultValue": 5
       },
       "MaxSpawnCount": 2,
-	  "CanBeUsedForConstantPressure": {
+      "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Shooter",
         "CooldownTime": 60,
@@ -686,7 +690,7 @@
         "BurnTemperature": 30
       }
     },
-	"ED_Spider_Exploder": {
+    "ED_Spider_Exploder": {
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Exploder",
@@ -711,7 +715,7 @@
         "DefaultValue": 5
       }
     },
-	"ED_Spider_Spitter": {
+    "ED_Spider_Spitter": {
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Spitter",
@@ -737,7 +741,7 @@
       },
       "SpawnAmountModifier": 1
     },
-	"ED_Spider_Lobber": {
+    "ED_Spider_Lobber": {
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Lobber",
@@ -764,7 +768,7 @@
       },
       "SpawnAmountModifier": 1
     },
-	"ED_Spider_RapidShooter": {
+    "ED_Spider_RapidShooter": {
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_RapidShooter",
@@ -782,7 +786,7 @@
       },
       "MinSpawnCount": 1,
       "MaxSpawnCount": 1,
-	  "UsesSpawnRarityModifiers": {
+      "UsesSpawnRarityModifiers": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_RapidShooter",
         "CooldownTime": 60,
@@ -798,7 +802,7 @@
       },
       "SpawnAmountModifier": 1
     },
-	"ED_Spider_Buffer": {
+    "ED_Spider_Buffer": {
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Buffer",
@@ -816,7 +820,7 @@
       },
       "MinSpawnCount": 1,
       "MaxSpawnCount": 1,
-	  "UsesSpawnRarityModifiers": {
+      "UsesSpawnRarityModifiers": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_Buffer",
         "CooldownTime": 60,
@@ -832,7 +836,7 @@
       },
       "SpawnAmountModifier": 1
     },
-	"ED_Grabber": {
+    "ED_Grabber": {
       "SpawnSpread": 5000,
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
@@ -859,7 +863,7 @@
         "DefaultValue": 8.5
       }
     },
-	"ED_Bomber": {
+    "ED_Bomber": {
       "CanBeUsedForConstantPressure": {
         "Mutate": "EnemyCooldown",
         "ED": "HED_Bomber",
@@ -1099,8 +1103,8 @@
       "Locations": 1,
       "SpawnOnEnable": true
     },
-	{
-	  "Name": "Harbinger",
+    {
+      "Name": "Harbinger",
       "Enabled": {
         "Mutate": "EnemyCooldown",
         "EDs": [
