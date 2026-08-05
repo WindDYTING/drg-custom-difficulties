@@ -166,6 +166,11 @@
         "ED_CaveLeech_Elite"
       ]
     },
+	"DisruptiveEnemies": {
+	  "Add": [
+	    "ED_Spider_ExploderTank1"
+	  ]
+	},
     "DisruptiveEnemyPoolCount": {
       "Min": 4,
       "Max": 6
@@ -741,7 +746,6 @@
       },
       "Interval": 10,
       "Enemies": [
-        "XED_DreadHelper",
         "ED_Spider_Grunt",
         "ED_Spider_Spitter",
         "ED_Mactera_Shooter_Normal"

@@ -1055,7 +1055,6 @@ Normal 6x2 plus:
       },
       "Interval": 10,
       "Enemies": [
-        "XED_DreadHelper",
         "ED_Spider_Grunt",
         "ED_Spider_Spitter",
         "ED_Mactera_Shooter_Normal"
@@ -1512,7 +1511,7 @@ Normal 6x2 plus:
         "Mutate": "EnemyCooldown",
         "ED": "HED_Spider_ExploderTank",
         "CooldownTime": 60,
-        "ValueDuringCooldown": 72,
+        "ValueDuringCooldown": 36,
         "DefaultValue": 120
       }
     },

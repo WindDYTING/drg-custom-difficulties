@@ -450,11 +450,10 @@
       "Base": "ED_Spider_Swarmer"
     },
     "ED_Spider_ExploderTank": {
-      "HealthMultiplier": 0.75,
       "Direct": {
         "Int:NumClusterBombs": {
           "Mutate": "ByMissionType",
-          "Default": 8,
+          "Default": 10,
           "Salvage": 0
         }
       },
@@ -649,19 +648,6 @@
       "Rarity": 11,
       "Resistances": {
         "DamageMultiplier": 6
-      },
-      "Temperature": {
-        "BurnTemperature": 80,
-        "DouseFireTemperature": 40,
-        "FreezeTemperature": -200
-      }
-    },
-    "ED_Bulk_Weak": {
-      "Base": "ED_Spider_ExploderTank",
-      "DifficultyRating": 10,
-      "MaxSpawnCount": 0,
-      "Resistances": {
-        "DamageMultiplier": 5
       },
       "Temperature": {
         "BurnTemperature": 80,
@@ -998,29 +984,6 @@
       "Difficulty": 125,
       "Interval": 17.5,
       "Distance": 0,
-      "Locations": 1
-    },
-    {
-      "Name": "Dread Support Wave Bulk",
-      "Enabled": {
-        "Mutate": "DuringDread"
-      },
-      "Enemies": [
-        "ED_Bulk_Weak"
-      ],
-      "Interval": {
-        "Mutate": "Add",
-        "A": 45,
-        "B": {
-          "Mutate": "Multiply",
-          "A": 15,
-          "B": {
-            "Mutate": "DwarvesDown"
-          }
-        }
-      },
-      "Difficulty": 10,
-      "Distance": 1000,
       "Locations": 1
     },
     {

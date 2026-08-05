@@ -720,7 +720,6 @@
       "SpawnAmountModifier": 1
     },
     "ED_Spider_ExploderTank": {
-      "HealthMultiplier": 0.75,
       "SpawnSpread": {
         "Mutate": "If",
         "Condition": {
@@ -1081,27 +1080,6 @@
     }
   },
   "WaveSpawners": [
-    {
-      "Enabled": {
-        "Mutate": "IfFloat",
-        "Value": {
-          "Mutate": "EnemyCount",
-          "ED": "XED_DreadHelper"
-        },
-        "<": 1,
-        "Then": {
-          "Mutate": "DuringDread"
-        },
-        "Else": false
-      },
-      "Interval": 10,
-      "Enemies": [
-        "XED_DreadHelper"
-      ],
-      "Difficulty": 250,
-      "Distance": 1750,
-      "Locations": 1
-    },
     {
       "Name": "Grunt WS",
       "Enabled": {
